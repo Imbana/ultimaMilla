@@ -2,6 +2,14 @@ import "./widgetSm.css";
 import { Visibility } from "@mui/icons-material";
 import { useState } from "react";
 
+
+const valueBoton ={
+    Approved:"Entregado",
+    Pending:"Retrasado",
+    Declined:"No recibido",
+}
+
+
 export default function WidgetSm() {
    const [newUser] = useState([]);
 
@@ -23,10 +31,82 @@ export default function WidgetSm() {
 //       } catch (error) {}
    
 //    }, []);
-
+const Button = ({ type }) => {
+    return <button className={"widgetLgButton " + type}>{valueBoton[type]}</button>;
+ };
    return (
+
+
       <div className="widgetSm">
-         <span className="widgetSmTitle">Usuario con mas entregas</span>
+         <span className="widgetSmTitle">Conductores con mas entregas</span>
+         <table className="widgetLgTable" >
+            <tbody>
+               <tr className="widgetLgTr">
+                  <th className="widgetLgTh">Conductor</th>
+                  <th className="widgetLgTh">Vehiculo</th>
+                  <th className="widgetLgTh">Entregados</th>
+                  <th className="widgetLgTh">No Entregados</th>
+               </tr>
+               <tr className="widgetLgTr">
+                  <td className="widgetLgUser">
+                     <img
+                        src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt=""
+                        className="widgetLgImg"
+                     />
+                     <span className="widgetLgName">Susan Carol</span>
+                  </td>
+                  <td className="widgetLgDate">bgr - 555</td>
+                  <td className="widgetLgAmount">5</td>
+                  <td className="widgetLgAmount">1</td>
+                  
+          
+               </tr>
+               <tr className="widgetLgTr">
+                  <td className="widgetLgUser">
+                     <img
+                        src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt=""
+                        className="widgetLgImg"
+                     />
+                     <span className="widgetLgName">Juan Carmelo</span>
+                  </td>
+                  <td className="widgetLgDate">gfr - 557</td>
+                  <td className="widgetLgAmount">4</td>
+                  <td className="widgetLgAmount">2</td>
+               </tr>
+               <tr className="widgetLgTr">
+                  <td className="widgetLgUser">
+                     <img
+                        src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt=""
+                        className="widgetLgImg"
+                     />
+                     <span className="widgetLgName">Juan Carmelo</span>
+                  </td>
+                  <td className="widgetLgDate">hht - 777</td>
+                  <td className="widgetLgAmount">3</td>
+                  <td className="widgetLgAmount">2</td>
+               </tr>
+               <tr className="widgetLgTr">
+                  <td className="widgetLgUser">
+                     <img
+                        src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt=""
+                        className="widgetLgImg"
+                     />
+                     <span className="widgetLgName">Juan Carmelo</span>
+                  </td>
+                  <td className="widgetLgDate">Carlos en gordo</td>
+                  <td className="widgetLgAmount">2</td>
+                  <td className="widgetLgAmount">2</td>
+               </tr>
+ 
+
+            </tbody>
+         </table>
+         
+         
          <ul className="widgetSmList">
             {newUser ? (
                newUser.map((item) => {

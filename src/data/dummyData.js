@@ -701,3 +701,4 @@ export const dataDevice = [
         activo: "12556",
     }, 
 ]
+

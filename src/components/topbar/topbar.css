@@ -17,15 +17,22 @@
 
 .logo {
   font-weight: bold;
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: 800;
   color: rgb(252, 252, 252);
   cursor: pointer;
+}
+.topLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topRight{
     display: flex;
     align-items: center;
+  
+
 }
 
 .topbarIconContainer {

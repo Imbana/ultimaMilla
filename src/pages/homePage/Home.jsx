@@ -7,24 +7,11 @@ import WidgetLg from "../../components/widgetLg/WidgetLg";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
 import { useState } from "react";
 
+
 export default function Home() {
 
 
-// const MONTHS = useMemo(
-//     () => [
-//     "Jun",
-//     "Feb",
-//     "Mar",
-//     "Apr",
-//     "May",
-//     "Jun",
-//     "Jul",
-//     "Agu",
-//     "Sep",
-//     "Oct",
-//     "Nov",
-//     "Dic"
-// ],[])
+
 
 
     const [userStats] = useState([])
@@ -66,7 +53,7 @@ export default function Home() {
   return (
     <div className="home">
       <FeaturedInfo />
-      <Chart data={userStats} title="User Analytics" grid dataKey="New User"/>
+      <Chart data={userStats} title="Grafica de datos semanal" grid dataKey="New User"/>
       <div className="homeWidgets">
         <WidgetSm/>
         <WidgetLg/>

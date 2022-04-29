@@ -7,12 +7,41 @@
 .featuredItem {
   flex: 1;
   margin: 0px 20px;
+  position: relative;
   padding: 30px;
   border-radius: 10px;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
+
+.featuredListIcons{
+    position: absolute;
+    margin: 10px;
+    top: 0px;
+    right: 0px;
+}
+.featuredListIconAsig{
+    color: rgb(37, 52, 255);
+    background-color: rgb(214, 223, 248);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.featuredListIconOn{
+    color: rgb(17, 139, 6);
+    background-color: rgb(214, 248, 220);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.featuredListIconOff{
+    color: rgb(255, 51, 0);
+    background-color: rgb(248, 214, 214);
+    border-radius: 50%;
+    padding: 5px;
+}
+
 
 .featuredTitle{
     font-size: 20px;
