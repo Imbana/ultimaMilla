@@ -1,0 +1,62 @@
+
+.containerPage{
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+
+.crudPageNav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.crudPageNav .AddCrudPage{
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    background-color: #456e5b;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.crudListEdit{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.crudListEditIcon{
+    color: #3bb077;
+    cursor: pointer;
+    margin: auto 5px;
+}
+
+
+.crudListDelete{
+    color: red;
+    cursor: pointer;
+    margin: auto 5px;
+}
+.crudButtonCrear{
+    margin-left: 20px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .crudPageNav{
+        margin: 0px 20px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .containerPage{
+        height: 500px;
+    }  
+    .crudButtonCrear{
+        margin-left: 0px !important;
+        margin-bottom: 10px !important;
+    }
+}

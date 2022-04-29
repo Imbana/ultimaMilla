@@ -1,0 +1,179 @@
+.crudEdit {
+    flex: 6;
+    padding: 10px 20px ;
+  }
+  
+  .crudEditTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .crudEditAddButton {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .crudEditContainer {
+    display: flex;
+    margin-top: 20px;
+    max-width: 1000px;
+  }
+  
+  .crudEditShow {
+    flex: 1;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+  
+  .crudEditUpdate {
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    margin-left: 20px;
+  }
+  
+  .crudEditShowTop {
+    display: flex;
+    align-items: center;
+  }
+  
+  .crudEditShowImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .crudEditShowTopTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .crudEditShowUsername {
+    font-weight: 600;
+  }
+  
+  .crudEditShowUserTitle {
+    font-weight: 300;
+  }
+  
+  .crudEditShowBottom{
+      margin-top: 20px;
+  }
+  
+  .crudEditShowTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(175, 170, 170);
+  }
+  
+  .crudEditShowInfo{
+      display: flex;
+      align-items: center;
+      margin: 20px 0px;
+      color: #444;
+  }
+  
+  .crudEditShowIcon{
+      font-size: 20px !important;
+  }
+  
+  .crudEditShowInfoTitle{
+      margin-left: 10px;
+  }
+  
+  .crudEditUpdateTitle{
+      font-size: 28px;
+      font-weight: 600;
+  }
+  .crudEditUpdateNav{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  
+  .crudEditUpdateForm{
+      margin-top: 20px;
+  }
+  
+  .crudEditUpdateItem{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+  }
+  
+  .crudEditUpdateItem>label{
+      margin-bottom: 5px;
+      font-size: 18px;
+  }
+  
+  .crudEditUpdateInput{
+      border: none;
+      width: 450px;
+      height: 30px;
+      border-bottom: 1px solid gray;
+  }
+  
+  .crudEditUpdateRight{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .crudEditUpdateUpload{
+      display: flex;
+      align-items: center;
+  }
+  
+  .crudEditUpdateImg{
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 20px;
+  }
+  
+  .crudEditUpdateIcon{
+      cursor: pointer;
+  }
+  
+  .crudEditUpdateButton{
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      background-color: darkblue;
+      color: white;
+      font-weight: 600;
+      margin-left: 20px;
+  }
+
+
+
+@media only screen and (max-width: 768px) {
+    .crudEditContainer{
+        flex-direction: column;
+    }
+    .crudEditContainer{
+        width: 90vw;
+        margin: 0px;
+    }
+    .crudEditUpdateInput{
+        width: auto;
+        padding: 0px;
+    }
+    .crudEditUpdate{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
