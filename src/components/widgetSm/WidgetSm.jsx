@@ -3,12 +3,6 @@ import { Visibility } from "@mui/icons-material";
 import { useState } from "react";
 
 
-const valueBoton ={
-    Approved:"Entregado",
-    Pending:"Retrasado",
-    Declined:"No recibido",
-}
-
 
 export default function WidgetSm() {
    const [newUser] = useState([]);
@@ -31,9 +25,7 @@ export default function WidgetSm() {
 //       } catch (error) {}
    
 //    }, []);
-const Button = ({ type }) => {
-    return <button className={"widgetLgButton " + type}>{valueBoton[type]}</button>;
- };
+
    return (
 
 

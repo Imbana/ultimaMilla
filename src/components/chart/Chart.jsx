@@ -86,7 +86,7 @@ export default function Chart({ title, dataKey, grid }) {
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
-      <Line options={options} data={data} />
+      <Line options={options} data={data} style={{width:"80%", height:"400px", margin:"0px auto"}}/>
     </div>
   );
 }
