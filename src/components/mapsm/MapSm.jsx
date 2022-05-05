@@ -6,8 +6,7 @@ const MapSm = () => {
   return (
     <div className='mapSm'>
         <Chart  title="Grafica de datos semanal" grid dataKey="New User"/>
-        <Chart  title="Grafica de datos semanal" grid dataKey="New User"/>
-    </div>
+ </div>
   )
 }
 

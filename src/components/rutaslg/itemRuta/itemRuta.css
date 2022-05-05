@@ -1,0 +1,8 @@
+.itemRutaCard{
+    display: flex;
+    align-items: center;
+}
+
+.itemRutaDesc{
+    margin-top: 20px;
+}

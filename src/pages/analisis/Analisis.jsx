@@ -1,6 +1,5 @@
 import * as React from "react";
 import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
-import MapSm from "../../components/mapsm/MapSm";
 import RutasLog from "../../components/rutaslg/RutasLog";
 import "./analisis.css"
 
@@ -10,7 +9,6 @@ const Analisis = () => {
          <h1>Analisis de las rutas</h1>
          <FeaturedInfo />
          <div className="analisisWidgets" >
-            <MapSm />
             <RutasLog />
          </div>
       </div>

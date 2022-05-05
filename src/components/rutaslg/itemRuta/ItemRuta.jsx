@@ -2,8 +2,8 @@ import { Avatar, Chip, Grid, Slider, Stack } from "@mui/material";
 import { deepOrange } from "@mui/material/colors";
 import { Box } from "@mui/system";
 import React from "react";
-
-import ChartOnly from "../../chartOnly/ChartOnly";
+import BubbleChart from "../../chart/BubbleChart";
+import "./itemRuta.css"
 
 const ItemRuta = () => {
    return (
@@ -18,9 +18,10 @@ const ItemRuta = () => {
                      <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>
                      <span>Juan Camilo</span>
                   </div>
-                  <div>
-                     {" "}
-                     <span>Vehiculo: JKL - 888</span>
+                  <div className="itemRutaDesc">
+                     <span>Vehiculo: 3610-HIE</span> <br/>
+                     <span>Tienda: tienda amiga</span> <br/>
+                     <span>78452224</span>
                   </div>
                </Grid>
                <Grid item xs={8} md={8}>
@@ -31,14 +32,16 @@ const ItemRuta = () => {
                   </Stack>
                </Grid>
                <Grid item xs={4} md={4} sx={{display:"flex",justifyContent:"center", flexDirection:"column"}}>
-               <Slider disabled defaultValue={80} aria-label="Disabled slider" />
+                <h3>Rutas finalizadas</h3>
+                <span>15 Entregadas</span>
+               <Slider  disabled defaultValue={80} aria-label="Disabled slider" />
+               <span>3 Pendientes</span>
                <Slider disabled defaultValue={40} aria-label="Disabled slider" />
+               <span>2 No Entregadas</span>
                <Slider disabled defaultValue={30} aria-label="Disabled slider" />
-               <Slider disabled defaultValue={90} aria-label="Disabled slider" />
-               <Slider disabled defaultValue={30} aria-label="Disabled slider" />
-               </Grid>
+              </Grid>
                <Grid item xs={8} md={8}>
-                  <ChartOnly />
+                  <BubbleChart />
                </Grid>
             </Grid>
          </Box>
