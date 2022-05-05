@@ -281,8 +281,8 @@ const RutasLog = () => {
          </Accordion>
          <Accordion
             sx={{ marginBottom: "20px" }}
-            expanded={expanded === "panel1"}
-            onChange={handleChange("panel1")}
+            expanded={expanded === "panel2"}
+            onChange={handleChange("panel2")}
          >
             <AccordionSummary
                expandIcon={<ExpandMoreIcon />}
@@ -524,8 +524,8 @@ const RutasLog = () => {
          </Accordion>
          <Accordion
             sx={{ marginBottom: "20px" }}
-            expanded={expanded === "panel1"}
-            onChange={handleChange("panel1")}
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
          >
             <AccordionSummary
                expandIcon={<ExpandMoreIcon />}
@@ -767,8 +767,8 @@ const RutasLog = () => {
          </Accordion>
          <Accordion
             sx={{ marginBottom: "20px" }}
-            expanded={expanded === "panel1"}
-            onChange={handleChange("panel1")}
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
          >
             <AccordionSummary
                expandIcon={<ExpandMoreIcon />}
