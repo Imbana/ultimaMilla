@@ -48,6 +48,7 @@ const RutasLog = () => {
             >
             <ItemRuta />
             </AccordionSummary>
+
             <AccordionDetails sx={{display:"flex",justifyContent:"space-between"}}>
                <List
                   sx={{
@@ -276,25 +277,22 @@ const RutasLog = () => {
                <MapSm />
 
 
-
-
-
-
             </AccordionDetails>
          </Accordion>
          <Accordion
             sx={{ marginBottom: "20px" }}
-            expanded={expanded === "panel2"}
-            onChange={handleChange("panel2")}
+            expanded={expanded === "panel1"}
+            onChange={handleChange("panel1")}
          >
             <AccordionSummary
                expandIcon={<ExpandMoreIcon />}
-               aria-controls="panel2bh-content"
-               id="panel2bh-header"
+               aria-controls="panel1bh-content"
+               id="panel1bh-header"
             >
-               <ItemRuta />
+            <ItemRuta />
             </AccordionSummary>
-            <AccordionDetails>
+
+            <AccordionDetails sx={{display:"flex",justifyContent:"space-between"}}>
                <List
                   sx={{
                      width: "100%",
@@ -302,7 +300,14 @@ const RutasLog = () => {
                      bgcolor: "background.paper",
                   }}
                >
-                  <ListItem alignItems="flex-start">
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
                      <ListItemAvatar>
                         <Avatar
                            alt="Remy Sharp"
@@ -310,7 +315,7 @@ const RutasLog = () => {
                         />
                      </ListItemAvatar>
                      <ListItemText
-                        primary="Brunch this weekend?"
+                        primary="Raul Manuel Ochoa"
                         secondary={
                            <React.Fragment>
                               <Typography
@@ -319,25 +324,30 @@ const RutasLog = () => {
                                  variant="body2"
                                  color="text.primary"
                               >
-                                 Ali Connors
+                                2255544888
                               </Typography>
-                              {
-                                 " — I'll be in your neighborhood doing errands this…"
-                              }
+                        
                            </React.Fragment>
                         }
                      />
+                 
                   </ListItem>
                   <Divider variant="inset" component="li" />
-                  <ListItem alignItems="flex-start">
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                    </IconButton>
+                  }
+                  >
                      <ListItemAvatar>
                         <Avatar
-                           alt="Travis Howard"
-                           src="/static/images/avatar/2.jpg"
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
                         />
                      </ListItemAvatar>
                      <ListItemText
-                        primary="Summer BBQ"
+                        primary="Raul Manuel Ochoa"
                         secondary={
                            <React.Fragment>
                               <Typography
@@ -346,52 +356,32 @@ const RutasLog = () => {
                                  variant="body2"
                                  color="text.primary"
                               >
-                                 to Scott, Alex, Jennifer
+                                2255544888
                               </Typography>
-                              {
-                                 " — Wish I could come, but I'm out of town this…"
-                              }
+                        
                            </React.Fragment>
                         }
                      />
-                  </ListItem>
-                  <Divider variant="inset" component="li" />
-                  <ListItem alignItems="flex-start">
-                     <ListItemAvatar>
-                        <Avatar
-                           alt="Cindy Baker"
-                           src="/static/images/avatar/3.jpg"
-                        />
-                     </ListItemAvatar>
-                     <ListItemText
-                        primary="Oui Oui"
-                        secondary={
-                           <React.Fragment>
-                              <Typography
-                                 sx={{ display: "inline" }}
-                                 component="span"
-                                 variant="body2"
-                                 color="text.primary"
-                              >
-                                 Sandra Adams
-                              </Typography>
-                              {
-                                 " — Do you have Paris recommendations? Have you ever…"
-                              }
-                           </React.Fragment>
-                        }
+                     <ListItemButton 
                      />
                   </ListItem>
                   <Divider variant="inset" component="li" />
-                  <ListItem alignItems="flex-start">
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(255, 99, 132)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
                      <ListItemAvatar>
                         <Avatar
-                           alt="Cindy Baker"
-                           src="/static/images/avatar/3.jpg"
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
                         />
                      </ListItemAvatar>
                      <ListItemText
-                        primary="Oui Oui"
+                        primary="Raul Manuel Ochoa"
                         secondary={
                            <React.Fragment>
                               <Typography
@@ -400,25 +390,32 @@ const RutasLog = () => {
                                  variant="body2"
                                  color="text.primary"
                               >
-                                 Sandra Adams
+                                2255544888
                               </Typography>
-                              {
-                                 " — Do you have Paris recommendations? Have you ever…"
-                              }
+                        
                            </React.Fragment>
                         }
                      />
+                     <ListItemButton 
+                     />
                   </ListItem>
                   <Divider variant="inset" component="li" />
-                  <ListItem alignItems="flex-start">
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
                      <ListItemAvatar>
                         <Avatar
-                           alt="Cindy Baker"
-                           src="/static/images/avatar/3.jpg"
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
                         />
                      </ListItemAvatar>
                      <ListItemText
-                        primary="Oui Oui"
+                        primary="Raul Manuel Ochoa"
                         secondary={
                            <React.Fragment>
                               <Typography
@@ -427,65 +424,598 @@ const RutasLog = () => {
                                  variant="body2"
                                  color="text.primary"
                               >
-                                 Sandra Adams
+                                2255544888
                               </Typography>
-                              {
-                                 " — Do you have Paris recommendations? Have you ever…"
-                              }
+                        
                            </React.Fragment>
                         }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(255, 99, 132)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
                      />
                   </ListItem>
                </List>
+
+               <div className="crudEditShowBottom">
+                  <span className="crudEditShowTitle">Detalles del usuario</span>
+                  <div className="crudEditShowInfo">
+                     <PermIdentity className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Raul Ochoa
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <PhoneAndroid className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        1124855258
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <MailOutline className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Raul@gmail.com
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <Key className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        314458224
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <CalendarToday className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Dir : Calle 8 # 8-8
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <LocationSearching className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        2120-08-21
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <LocationSearching className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                       1
+                     </span>
+                  </div>
+               </div>
+
+
+
+               <MapSm />
+
+
             </AccordionDetails>
          </Accordion>
          <Accordion
             sx={{ marginBottom: "20px" }}
-            expanded={expanded === "panel3"}
-            onChange={handleChange("panel3")}
+            expanded={expanded === "panel1"}
+            onChange={handleChange("panel1")}
          >
             <AccordionSummary
                expandIcon={<ExpandMoreIcon />}
-               aria-controls="panel3bh-content"
-               id="panel3bh-header"
+               aria-controls="panel1bh-content"
+               id="panel1bh-header"
             >
-               <Typography sx={{ width: "13%", flexShrink: 0 }}>
-                  Advanced settings
-               </Typography>
-
-               <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
-               </Typography>
+            <ItemRuta />
             </AccordionSummary>
-            <AccordionDetails>
-               <Typography>
-                  Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                  Integer sit amet egestas eros, vitae egestas augue. Duis vel
-                  est augue.
-               </Typography>
+
+            <AccordionDetails sx={{display:"flex",justifyContent:"space-between"}}>
+               <List
+                  sx={{
+                     width: "100%",
+                     maxWidth: 360,
+                     bgcolor: "background.paper",
+                  }}
+               >
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                 
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(255, 99, 132)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(255, 99, 132)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+               </List>
+
+               <div className="crudEditShowBottom">
+                  <span className="crudEditShowTitle">Detalles del usuario</span>
+                  <div className="crudEditShowInfo">
+                     <PermIdentity className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Raul Ochoa
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <PhoneAndroid className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        1124855258
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <MailOutline className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Raul@gmail.com
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <Key className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        314458224
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <CalendarToday className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Dir : Calle 8 # 8-8
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <LocationSearching className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        2120-08-21
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <LocationSearching className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                       1
+                     </span>
+                  </div>
+               </div>
+
+
+
+               <MapSm />
+
+
             </AccordionDetails>
          </Accordion>
          <Accordion
-            expanded={expanded === "panel4"}
-            onChange={handleChange("panel4")}
+            sx={{ marginBottom: "20px" }}
+            expanded={expanded === "panel1"}
+            onChange={handleChange("panel1")}
          >
             <AccordionSummary
                expandIcon={<ExpandMoreIcon />}
-               aria-controls="panel4bh-content"
-               id="panel4bh-header"
+               aria-controls="panel1bh-content"
+               id="panel1bh-header"
             >
-               <Typography sx={{ width: "13%", flexShrink: 0 }}>
-                  Personal data
-               </Typography>
+            <ItemRuta />
             </AccordionSummary>
-            <AccordionDetails>
-               <Typography>
-                  Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                  Integer sit amet egestas eros, vitae egestas augue. Duis vel
-                  est augue.
-               </Typography>
+
+            <AccordionDetails sx={{display:"flex",justifyContent:"space-between"}}>
+               <List
+                  sx={{
+                     width: "100%",
+                     maxWidth: 360,
+                     bgcolor: "background.paper",
+                  }}
+               >
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                 
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(255, 99, 132)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(53, 162, 235)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+                  <Divider variant="inset" component="li" />
+                  <ListItem alignItems="flex-start"
+                  secondaryAction={
+                    <IconButton title="Ver detalles">
+                      <VisibilityIcon sx={{color:"rgba(255, 99, 132)"}}/> 
+                      
+                    </IconButton>
+                  }
+                  >
+                     <ListItemAvatar>
+                        <Avatar
+                           alt="Remy Sharp"
+                           src="/static/images/avatar/1.jpg"
+                        />
+                     </ListItemAvatar>
+                     <ListItemText
+                        primary="Raul Manuel Ochoa"
+                        secondary={
+                           <React.Fragment>
+                              <Typography
+                                 sx={{ display: "inline" }}
+                                 component="span"
+                                 variant="body2"
+                                 color="text.primary"
+                              >
+                                2255544888
+                              </Typography>
+                        
+                           </React.Fragment>
+                        }
+                     />
+                     <ListItemButton 
+                     />
+                  </ListItem>
+               </List>
+
+               <div className="crudEditShowBottom">
+                  <span className="crudEditShowTitle">Detalles del usuario</span>
+                  <div className="crudEditShowInfo">
+                     <PermIdentity className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Raul Ochoa
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <PhoneAndroid className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        1124855258
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <MailOutline className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Raul@gmail.com
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <Key className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        314458224
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <CalendarToday className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        Dir : Calle 8 # 8-8
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <LocationSearching className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                        2120-08-21
+                     </span>
+                  </div>
+                  <div className="crudEditShowInfo">
+                     <LocationSearching className="crudEditShowIcon" />
+                     <span className="crudEditShowInfoTitle">
+                       1
+                     </span>
+                  </div>
+               </div>
+
+
+
+               <MapSm />
+
+
             </AccordionDetails>
          </Accordion>
+
+
+
+
+
+
+
+
       </div>
    );
 };
