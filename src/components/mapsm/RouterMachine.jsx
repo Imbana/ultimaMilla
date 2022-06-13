@@ -16,7 +16,7 @@ const createRoutineMachineLayer = (props) => {
   const instance = L.Routing.control({
     waypoints: [L.latLng(point1), L.latLng(point2)],
     lineOptions: {
-      styles: [{ color: "#6FA1EC", weight: 4 }]
+      styles: [{ color: "#24263b", weight: 4 }]
     },
     show: true,
     collapsible: true,
